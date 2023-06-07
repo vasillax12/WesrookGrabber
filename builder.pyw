@@ -201,7 +201,7 @@ class App(customtkinter.CTk):
         self.fileopts.grid(row=1, column=0, sticky="nw", padx=85, pady=340)
         self.fileopts.set("File Options")
 
-        self.icon = customtkinter.CTkButton(self.builder_frame, width=250, text="Add Icon", fg_color="#5d11c3", hover_color="#5057eb",
+        self.icon = customtkinter.CTkButton(self.builder_frame, width=250, text="Add Icon", fg_color="#5d11c3", hover_color="#00FF00",
                                             font=customtkinter.CTkFont(size=33, family=self.font), command=self.get_icon)
         self.icon.grid(row=1, column=0, sticky="ne", padx=85, pady=340)
         self.icon.configure(state="disabled")
@@ -211,7 +211,7 @@ class App(customtkinter.CTk):
         self.filename.grid(row=1, column=0, sticky="nw", padx=85, pady=410)
 
         self.build = customtkinter.CTkButton(self.builder_frame, width=250, text="Build", font=customtkinter.CTkFont(size=35, family=self.font),
-                                             fg_color="#5d11c3", hover_color="#5057eb", command=self.buildfile)
+                                             fg_color="#5d11c3", hover_color="#00FF00", command=self.buildfile)
         self.build.grid(row=1, column=0, sticky="ne", padx=85, pady=410)
 
         self.checkboxes = [self.ping, self.pingtype, self.error, self.startup, self.defender, self.systeminfo, self.backupcodes, self.browser,
